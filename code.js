@@ -28,14 +28,29 @@ const roasts = [
     "Did you just discover numbers, kid?",
     "I’m embarrassed for you right now.",
     "This is why calculators hate humans.",
-    "Congrats, you’ve peaked at preschool level!"
+    "Congrats, you’ve peaked at preschool level!",
+    "Your math is so bad, even imaginary numbers don't want to associate with you.",
+    "You're proof that not everyone who multiplies ends up with product.",
+    "You treat numbers like feelings — you just ignore them when they're inconvenient.",
+    "You must be a zero, because you bring nothing to the equation.",
+"You're the reason calculators have a ‘clear’ button.",
+"Did you divide by zero? Because you've just broken reality.",
+"If math was a battlefield, you'd be the chalk outline.",
+"You're not even wrong — you're orthogonal to logic itself.",
+"You're like an unsolved integral — frustrating, pointless, and no one wants to deal with you.",
+"You're like a recursive function with no base case — lost forever.",
+"Your logic is less consistent than Gödel’s incompleteness theorem.",
+"You’re a math paradox: full of contradiction and still somehow going.",
+"Even π is more rational than your math skills.",
+"Your math is so off, it's giving Schrödinger a headache.",
+"I’d correct your math, but I’m not qualified to perform miracles.",
 ];
 
 // Function to check if a calculation is "simple"
 function isSimpleCalculation(num1, num2, operator) {
     const n1 = Math.abs(parseFloat(num1));
     const n2 = Math.abs(parseFloat(num2));
-    return n1 < 10 && n2 < 10 && operators.includes(operator) && !num1.includes(".") && !num2.includes(".");
+    return n1 < 30 && n2 < 30 && operators.includes(operator) && !num1.includes(".") && !num2.includes(".");
 }
 
 function button_number(button) {
